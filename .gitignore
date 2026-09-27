@@ -1,0 +1,10 @@
+*.exe
+*.test
+*.out
+/bin/
+
+# never commit real bank statements
+*.csv
+
+# local config
+.env
