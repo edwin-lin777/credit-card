@@ -7,7 +7,7 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
-//read one card file
+// read one card file
 func LoadCard(path string) (Card, error) {
 	data, err := os.ReadFile(path)
 	if err != nil {
