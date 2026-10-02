@@ -1,0 +1,15 @@
+id: rbc-cash-back
+name: RBC Cash Back Mastercard
+annual_fee_cents: 0
+base_rate: 0.005
+
+groups:
+  - rates:
+      groceries: 0.02
+
+  - rates:
+      gas: 0.01
+      transit: 0.01
+
+source_url: https://www.rbcroyalbank.com/credit-cards/cardholders/cash-back-updates.html
+verified_on: 2026-10-02

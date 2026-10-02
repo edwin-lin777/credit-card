@@ -1,0 +1,17 @@
+id: amex-simplycash
+name: SimplyCash Card from American Express
+annual_fee_cents: 0
+base_rate: 0.0125
+
+groups:
+  - rates:
+      gas: 0.02
+
+  - rates:
+      groceries: 0.02
+    cap:
+      amount_cents: 1500000
+      period: annual
+
+source_url: https://www.americanexpress.com/en-ca/benefits/simplycash-card/
+verified_on: 2026-10-02

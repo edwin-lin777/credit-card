@@ -1,0 +1,23 @@
+id: scotia-momentum
+name: Scotia Momentum Visa Infinite Plus Card
+annual_fee_cents: 12000
+base_rate: 0.01
+
+groups:
+  - rates:
+      groceries: 0.04
+      bills: 0.04
+    cap:
+      amount_cents: 2500000
+      period: annual
+
+  - rates:
+      gas: 0.02
+      transit: 0.02
+      dining: 0.02
+    cap:
+      amount_cents: 2500000
+      period: annual
+
+source_url: https://www.scotiabank.com/ca/en/personal/credit-cards/visa/momentum-infinite-card.html
+verified_on: 2026-10-02

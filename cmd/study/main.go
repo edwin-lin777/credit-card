@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	c, err := catalog.LoadCard("cards/rogers-red.yaml")
+	c, err := catalog.LoadCard("cards/scotia-momentum.yaml")
 	if err != nil {
 		log.Fatal(err)
 	}

@@ -1,0 +1,12 @@
+id: test-bonus
+name: Test Bonus Card
+annual_fee_cents: 0
+base_rate: 0.01
+
+groups:
+  - rates:
+      groceries: 0.04
+      bills: 0.04
+    cap:
+      amount_cents: 2500000
+      period: annual

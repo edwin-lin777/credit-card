@@ -1,0 +1,32 @@
+id: td-cash-back-visa-infinite
+name: TD Cash Back Visa Infinite Card
+annual_fee_cents: 13900
+base_rate: 0.01
+
+groups:
+  - rates:
+      groceries: 0.03
+    cap:
+      amount_cents: 1500000
+      period: annual
+
+  - rates:
+      gas: 0.03
+    cap:
+      amount_cents: 1500000
+      period: annual
+
+  - rates:
+      transit: 0.03
+    cap:
+      amount_cents: 1500000
+      period: annual
+
+  - rates:
+      bills: 0.03
+    cap:
+      amount_cents: 1500000
+      period: annual
+
+source_url: https://www.td.com/ca/en/personal-banking/products/credit-cards/cash-back
+verified_on: 2026-10-02

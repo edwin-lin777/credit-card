@@ -1,0 +1,20 @@
+id: bmo-cashback
+name: BMO CashBack Mastercard
+annual_fee_cents: 0
+base_rate: 0.005
+
+groups:
+  - rates:
+      groceries: 0.03
+    cap:
+      amount_cents: 50000
+      period: monthly
+
+  - rates:
+      bills: 0.01
+    cap:
+      amount_cents: 50000
+      period: monthly
+
+source_url: https://www.bmo.com/main/personal/credit-cards/all-cards/
+verified_on: 2026-10-02

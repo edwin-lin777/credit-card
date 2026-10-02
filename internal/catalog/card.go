@@ -1,6 +1,12 @@
 package catalog
 
-import "github.com/edwin-lin777/credit-card/internal/spending"
+import (
+	"fmt"
+
+	"gopkg.in/yaml.v3"
+
+	"github.com/edwin-lin777/credit-card/internal/spending"
+)
 
 type Period int
 
@@ -9,17 +15,29 @@ const (
 	Annual
 )
 
+func (p *Period) UnmarshalYAML(value *yaml.Node) error {
+	switch value.Value {
+	case "monthly":
+		*p = Monthly
+	case "annual":
+		*p = Annual
+	default:
+		return fmt.Errorf("unknown cap period %q", value.Value)
+	}
+
+	return nil
+}
+
 // Cap limits how much spending earns a group's bonus rate before it falls
 // back to the card's base rate.
 type Cap struct {
-	AmountCents int64
-	Period      Period
+	AmountCents int64  `yaml:"amount_cents"`
+	Period      Period `yaml:"period"`
 }
 
-// Group is a set of categories that share one cap. A nil Cap means uncapped.
 type Group struct {
-	Rates map[spending.Category]float64
-	Cap   *Cap
+	Rates map[spending.Category]float64 `yaml:"rates"`
+	Cap   *Cap                          `yaml:"cap"`
 }
 
 // Card is one credit card's earn rules.

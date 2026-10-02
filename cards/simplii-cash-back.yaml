@@ -1,0 +1,23 @@
+id: simplii-cash-back
+name: Simplii Financial Cash Back Visa
+annual_fee_cents: 0
+base_rate: 0.005
+
+groups:
+  - rates:
+      dining: 0.04
+    cap:
+      amount_cents: 500000
+      period: annual
+
+  - rates:
+      gas: 0.015
+      groceries: 0.015
+      bills: 0.015
+      retail: 0.015
+    cap:
+      amount_cents: 1500000
+      period: annual
+
+source_url: https://www.simplii.com/en/credit-cards/cash-back-visa.html
+verified_on: 2026-10-02

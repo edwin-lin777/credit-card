@@ -1,0 +1,14 @@
+id: rbc-cash-back-preferred-world-elite
+name: RBC Cash Back Preferred World Elite Mastercard
+annual_fee_cents: 12000
+base_rate: 0.01
+
+groups:
+  - rates:
+      groceries: 0.03
+      dining: 0.03
+      gas: 0.03
+      transit: 0.03
+
+source_url: https://www.rbcroyalbank.com/credit-cards/cardholders/cash-back-updates.html
+verified_on: 2026-10-02

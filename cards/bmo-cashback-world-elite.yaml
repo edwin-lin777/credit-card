@@ -1,0 +1,32 @@
+id: bmo-cashback-world-elite
+name: BMO CashBack World Elite Mastercard
+annual_fee_cents: 13900
+base_rate: 0.01
+
+groups:
+  - rates:
+      groceries: 0.05
+    cap:
+      amount_cents: 50000
+      period: monthly
+
+  - rates:
+      transit: 0.04
+    cap:
+      amount_cents: 30000
+      period: monthly
+
+  - rates:
+      gas: 0.03
+    cap:
+      amount_cents: 30000
+      period: monthly
+
+  - rates:
+      bills: 0.02
+    cap:
+      amount_cents: 50000
+      period: monthly
+
+source_url: https://www.bmo.com/main/personal/credit-cards/all-cards/
+verified_on: 2026-10-02

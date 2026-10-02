@@ -1,0 +1,12 @@
+id: capital-one-quicksilver-world-elite
+name: Capital One Quicksilver World Elite Mastercard
+annual_fee_cents: 0
+base_rate: 0.01
+
+groups:
+  - rates:
+      groceries: 0.03
+      gas: 0.03
+
+source_url: https://www.capitalone.ca/credit-cards/compare/
+verified_on: 2026-10-02
