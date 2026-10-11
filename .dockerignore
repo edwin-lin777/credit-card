@@ -1,0 +1,7 @@
+.git
+.vscode
+*.prof
+*.test.exe
+results.json
+results*.json
+output/

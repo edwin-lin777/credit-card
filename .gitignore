@@ -8,3 +8,13 @@
 
 # local config
 .env
+# Generated simulation results
+results*.json
+
+# Go profiling and test binaries
+*.prof
+*.test
+*.test.exe
+
+# Local editor files
+.vscode/
