@@ -14,7 +14,6 @@ groups:
   - rates:
       gas: 0.02
       transit: 0.02
-      dining: 0.02
     cap:
       amount_cents: 2500000
       period: annual
